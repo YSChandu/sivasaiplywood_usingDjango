@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siva Sai plywood</title>
+    <link rel="stylesheet" href="{% static 's.css/home.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Siva Sai plywood</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href='aboutus'>About Us</a></li>
+                <li><a href='product'>Products</a></li>
+                <li><a href='brands' >Brands</a></li>
+                <li><a href='services' >Services</a></li>
+                <li><a href='blog'>Blog</a></li>
+                <li><a href='contactus' >Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Premium Plywood for Every Need</h1>
+        <p>Discover top brands and unmatched quality</p>
+        <a href="#" class="cta">Shop Now</a>
+    </section>
+
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <!-- Repeat this block for each product -->
+            <div class="product">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$100</p>
+                <a href="#" class="btn">View Details</a>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <!-- End of product block -->
+        </div>
+    </section>
+
+    <section class="brands">
+        <h2>Our Brands</h2>
+        <div class="brand-logos">
+            <!-- Repeat this block for each brand -->
+            <div class="brand">
+                <img src="{% static 'brand1.jpg' %}" alt="Brand 1">
+                <p>Brand 1</p>
+            </div>
+            <!-- End of brand block -->
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>Wide range of high-quality plywood</li>
+            <li>Trusted brands</li>
+            <li>Competitive prices</li>
+            <li>Expert advice and customer support</li>
+            <li>Fast and reliable delivery</li>
+        </ul>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-carousel">
+            <!-- Repeat this block for each testimonial -->
+            <div class="testimonial">
+                <p>"Great quality plywood and excellent customer service!"</p>
+                <p>- John Doe</p>
+            </div>
+            <!-- End of testimonial block -->
+        </div>
+    </section>
+
+    <section class="blog">
+        <h2>Latest from Our Blog</h2>
+        <div class="blog-posts">
+            <!-- Repeat this block for each blog post -->
+            <div class="blog-post">
+                <h3>Blog Post 1</h3>
+                <p>Excerpt from the blog post...</p>
+                <a href="{% static '#' %}" class="btn">Read More</a>
+            </div>
+            <!-- End of blog post block -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="contact-info">
+                <p>Phone: +918019808379</p>
+                <p>Email: sivasaiplywood@gmail.com</p>
+                <p>Address: SIVASAI PLYWOODS, Peddabavi Center, 53-1-333 Main Road, Christurajpuram, Gunadala, Vijayawada, Andhra Pradesh 520008</p>
+            </div>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            <div class="newsletter">
+                <input type="email" placeholder="Subscribe for Updates and Offers">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Siva sai plywood. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
