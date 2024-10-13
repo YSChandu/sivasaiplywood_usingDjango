@@ -2,7 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return render(request,'home.html')
+    brands =["kitply","century","bluestar","austin","chandu"]
+    products=["product1","product1","product1","product1","product1","product1","product1","product1"]
+    context={'products':products,'brands':brands}
+    return render(request,'home.html',context)
 
 
 def services(request):
@@ -10,7 +13,8 @@ def services(request):
 
 
 def product(request):
-    return render(request,'product.html')
+    products=["product1","product2","product3","product4","product5","product6","product7","product8","product9"]
+    return render(request,'product.html',{'products':products})
 
 
 def contactus(request):

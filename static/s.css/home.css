@@ -72,13 +72,25 @@ header .search-bar input {
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    color: #464542;
+    text-shadow: #333;
 }
 
 .hero p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
+    color: #464542;
+    text-shadow: #333;
 }
-
+.hero h1:hover{
+    border-color: #333;
+    border-width: 20%;
+    color: #fcfcfa;
+}
+.hero p:hover{
+    border-color:#333 ;
+    color: #fcfcfa;
+}
 .hero .cta {
     background: #f0a500;
     color: #fff;
@@ -119,8 +131,8 @@ header .search-bar input {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    gap: 4rem;
 }
 
 .product {
@@ -285,6 +297,7 @@ footer {
 
 .footer-content {
     display: flex;
+    color: #fff;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
@@ -292,6 +305,7 @@ footer {
 
 .footer-links, .contact-info, .social-media, .newsletter {
     flex: 1 1 200px;
+    color: #fff;
 }
 
 .footer-links ul {
@@ -320,7 +334,7 @@ footer {
 .social-media a {
     display: inline-block;
     margin-right: 0.5rem;
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: color 0.3s;
 }

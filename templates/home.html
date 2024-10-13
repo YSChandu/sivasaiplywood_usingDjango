@@ -16,13 +16,13 @@
         <div class="logo">Siva Sai plywood</div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href=''>Home</a></li>
                 <li><a href='aboutus'>About Us</a></li>
                 <li><a href='product'>Products</a></li>
                 <li><a href='brands' >Brands</a></li>
-                <li><a href='services' >Services</a></li>
-                <li><a href='blog'>Blog</a></li>
-                <li><a href='contactus' >Contact Us</a></li>
+                <li><a href='services'>Services</a></li>
+                <li><a href='blog'>Blog</li>
+                <li><a href='contactus'>Contact Us</a></li>
             </ul>
         </nav>
         <div class="search-bar">
@@ -33,20 +33,22 @@
     <section class="hero">
         <h1>Premium Plywood for Every Need</h1>
         <p>Discover top brands and unmatched quality</p>
-        <a href="#" class="cta">Shop Now</a>
+        <a href='product' class="cta">Shop Now</a>
     </section>
 
     <section class="featured-products">
         <h2>Featured Products</h2>
         <div class="product-grid">
             <!-- Repeat this block for each product -->
+            {% for product in products%}
             <div class="product">
                 <img src="product1.jpg" alt="Product 1">
-                <h3>Product 1</h3>
+                <h3>{{product}}</h3>
                 <p>$100</p>
                 <a href="#" class="btn">View Details</a>
                 <a href="#" class="btn">Add to Cart</a>
             </div>
+            {%endfor%}
             <!-- End of product block -->
         </div>
     </section>
@@ -54,12 +56,12 @@
     <section class="brands">
         <h2>Our Brands</h2>
         <div class="brand-logos">
-            <!-- Repeat this block for each brand -->
+            {% for brand in brands%}
             <div class="brand">
                 <img src="{% static 'brand1.jpg' %}" alt="Brand 1">
-                <p>Brand 1</p>
+                <p>{{brand}}</p>
             </div>
-            <!-- End of brand block -->
+            {%endfor%}
         </div>
     </section>
 
@@ -102,13 +104,13 @@
     <footer>
         <div class="footer-content">
             <ul class="footer-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Brands</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href=''>Home</a></li>
+                <li><a href='aboutus'>About Us</a></li>
+                <li><a href='product'>Products</a></li>
+                <li><a href='brands' >Brands</a></li>
+                <li><a href='services' >Services</a></li>
+                <li><a href='blog'>Blog</li>
+                <li><a href='contactus' >Contact Us</a></li>
             </ul>
             <div class="contact-info">
                 <p>Phone: +918019808379</p>
@@ -116,10 +118,10 @@
                 <p>Address: SIVASAI PLYWOODS, Peddabavi Center, 53-1-333 Main Road, Christurajpuram, Gunadala, Vijayawada, Andhra Pradesh 520008</p>
             </div>
             <div class="social-media">
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
-                <a href="#">LinkedIn</a>
+                <a href="">Facebook</a>
+                <a href="">Twitter</a>
+                <a href="">Instagram</a>
+                <a href="">LinkedIn</a>
             </div>
             <div class="newsletter">
                 <input type="email" placeholder="Subscribe for Updates and Offers">
